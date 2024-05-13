@@ -6,9 +6,9 @@ class BankTransfer {
   // Зробіть метод initiateTransfer, який приймає amount та відповідає за ініціювання банківського переказу
   initiateTransfer(amount) {
     // Він приймає суму переказу як параметр
-    this.amount = amount;
+
     // Для ініціювання банківського переказу спершу обчислюється сума з урахуванням комісії calculatedAmount = this.calculateFee(amount)
-    calculatedAmount = this.calculateFee(amount);
+    const calculatedAmount = this.calculateFee(amount);
     // Виводимо інформацію про ініціювання банківського переказу Ініціюємо банківський переказ: $${calculatedAmount}
     console.log(`$${calculatedAmount}`);
   }
